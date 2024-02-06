@@ -4,7 +4,7 @@ POST  http://localhost:3000/auth/signup
 Content-Type: application/json
 
 {
-    "email":"newuser1@gmail.com",
+    "email":"test@test.com",
     "password":"123456"
 }
 ### sign in user
@@ -12,9 +12,17 @@ POST  http://localhost:3000/auth/signin
 Content-Type: application/json
 
 {
-    "email":"newuser@gmail.com",
+    "email":"test@test.com",
     "password":"123456"
 }
+
+### get currently signed user
+GET  http://localhost:3000/auth/whoami
+Content-Type: application/json
+
+### sign out
+POST  http://localhost:3000/auth/signOut
+Content-Type: application/json
 
 ### find particular user
 GET  http://localhost:3000/auth/2
